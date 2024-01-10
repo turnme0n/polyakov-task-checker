@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "codechecker"
+version = "0.1.0"
+description = "Check answers for tasks from polyakov"
+authors = ["Kolyaka <dm@kolyaka.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.26.0"
+tqdm = "^4.66.1"
+loguru = "^0.7.2"
+pandas = "^2.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+nuitka = "^1.9.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
