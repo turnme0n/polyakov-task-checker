@@ -37,7 +37,8 @@ class AnswerChecker:
             python,
             answer.path,
             stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
+            stderr=asyncio.subprocess.PIPE,
+            cwd=answer.path.parent,
         )
         stdout, _ = await asyncio.wait_for(proc.communicate(), timeout=10)
         
