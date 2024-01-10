@@ -1,2 +1,2 @@
-__main__.*
 .venv
+__pycache__
